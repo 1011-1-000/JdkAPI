@@ -1,6 +1,7 @@
 package com.java.structure;
 
-import org.java.util.DurationTime;
+import org.java.util.JavaUtils;
+
 
 //求给定的一列数的最大值 如：-2,11,-4,13,-5,-2 最大值为20
 
@@ -27,7 +28,7 @@ public class MaxSubSum {
 			}
 		}
 		System.out.println(maxSum);
-		DurationTime.getDuration(startTime);
+		JavaUtils.getDuration(startTime);
 	}
 	
 	//时间复杂度O(n*n*n)
@@ -48,14 +49,14 @@ public class MaxSubSum {
 			}
 		}
 		System.out.println(maxSum);
-		DurationTime.getDuration(startTime);
+		JavaUtils.getDuration(startTime);
 	}
 	
 	//时间复杂度O(nlogn)
 	public static void maxSubSum3(int[] a){
 		long startTime = System.nanoTime();
 		System.out.println(maxSumRec(a,0,a.length-1));
-		DurationTime.getDuration(startTime);
+		JavaUtils.getDuration(startTime);
 	}
 	
 	//时间复杂度O(n)
@@ -74,7 +75,7 @@ public class MaxSubSum {
 		}
 		
 		System.out.println(maxSum);
-		DurationTime.getDuration(startTime);
+		JavaUtils.getDuration(startTime);
 	}
 	
 	private static int maxSumRec(int[] a,int left,int right){
