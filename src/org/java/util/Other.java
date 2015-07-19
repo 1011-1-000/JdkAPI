@@ -1,5 +1,7 @@
 package org.java.util;
 
+import java.util.List;
+
 public class Other {
 	//欧几里得算法
 	//求最大公约数
@@ -10,5 +12,13 @@ public class Other {
 			n = r;
 		}
 		return m;
+	}
+	
+	public static void removeEvenVerl(List<Integer> lst){
+		for(Integer x : lst){
+			if(x % 2 == 0){
+				lst.remove(x);
+			}
+		}
 	}
 }
