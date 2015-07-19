@@ -47,5 +47,6 @@ public class MyArtAndLkl {
 		l1.add("Map");
 		System.out.println("MyLinkedList Elements:");
 		System.out.print("\t" + l1 + "\n");
+		System.out.println(l1.get(l1.size()));
 	}
 }
