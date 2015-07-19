@@ -2,7 +2,7 @@ package org.java.util;
 
 public class MyArrayList<AnyType> implements Iterable<AnyType>{
 	
-	private static final int DEFAULT_CAPACITY = 10;//默认容量
+	private static final int DEFAULT_CAPACITY = 0;//默认容量
 	private int theSize;//现在的List大小
 	private AnyType[] theItems;
 	
@@ -101,5 +101,17 @@ public class MyArrayList<AnyType> implements Iterable<AnyType>{
 		public void remove(){
 			MyArrayList.this.remove(--current);
 		}
+	}
+	
+	public String toString(){
+		if(size() == 0){
+			return "[]";
+		}
+		StringBuffer str = new StringBuffer("["+theItems[0].toString());
+		for(int i =1;i<size();++i){
+			str.append(","+theItems[i].toString());
+		}
+		str.append("]");
+		return str.toString();
 	}
 }

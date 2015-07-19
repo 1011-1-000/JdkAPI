@@ -12,3 +12,6 @@
 ####2015-07-19
 
 - 添加ArrayList的实现——MyArrayList
+- 添加LinkedList的实现——MyLinkedList
+- 给这两个List增加toString方法便于打印
+- 增加一个测试包
