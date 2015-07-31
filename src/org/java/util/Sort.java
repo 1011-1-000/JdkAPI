@@ -91,4 +91,69 @@ public class Sort {
 			rightEnd --;
 		}
 	}
+	
+	//快速排序
+	public static <AnyType extends Comparable<? super AnyType>> void quickSort(AnyType[] a){
+		quickSort(a, 0, a.length - 1);
+	}
+	
+	private static <AnyType extends Comparable<? super AnyType>> void quickSort(AnyType[] a,int left,int right){
+		if(left + 10 <= right){
+			AnyType pivot = median3(a, left, right);//选择枢纽元
+			
+			int i = left;
+			int j = right - 1;
+			
+			while(true){
+				while(a[++i].compareTo(pivot) < 0){}
+				while(a[--j].compareTo(pivot) > 0){}
+				
+				if(i < j){
+					swapReferences(a, i, j);
+				}
+				else{
+					break;
+				}
+			}
+				swapReferences(a, i, right-1);
+				quickSort(a, left, i-1);
+				quickSort(a, i+1, right);
+		}
+		else{
+			insertionSort(a);
+		}
+	}
+	
+	private static <AnyType extends Comparable<? super AnyType>> AnyType median3(AnyType[] a,int left,int right){
+		int center = (left + right)/2;
+		if(a[center].compareTo(a[left]) < 0){
+			swapReferences(a, left, center);
+		}
+		if(a[right].compareTo(a[left]) < 0){
+			swapReferences(a, left, right);
+		}
+		if(a[right].compareTo(a[center]) < 0){
+			swapReferences(a, center, right);
+		}
+		
+		swapReferences(a, center, right-1);
+		return a[right - 1];
+	}
+	
+	private static<AnyType extends Comparable<? super AnyType>> void swapReferences(AnyType[] a,int i,int j){
+		AnyType tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
+	}
+	
+	public static <AnyType extends Comparable<? super AnyType>> void bubbleSort(AnyType[] a){
+		
+		for(int i = 0; i < a.length; i++){
+			for(int j = 1 ;j < a.length - i;j++){
+				if(a[j].compareTo(a[j-1]) < 0){
+					swapReferences(a, j, j-1);
+				}
+			}
+		}
+	}
 }

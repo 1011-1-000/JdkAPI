@@ -9,10 +9,12 @@ public class TestSort {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Integer a[] = {3,6,2,1,7,6,5,8,10,9};
+		Integer a[] = {3,6,2,1,7,6,5,8,10,9,11,43,34,56};
 //		Sort.insertionSort(a);
 //		Sort.heapSort(a);
-		Sort.mergeSort(a);
+//		Sort.mergeSort(a);
+//		Sort.quickSort(a);
+		Sort.bubbleSort(a);
 		printArray(a);
 	}
 	
