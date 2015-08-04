@@ -48,3 +48,8 @@
 ---
 - 添加并查集的实现
 - 几种排序算法的速度比较程序，在测试类里
+
+---
+- 添加HashMap的实现-MyHashMap及简单测试
+- 添加Comparable与Comprator的比较
+

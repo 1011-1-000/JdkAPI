@@ -9,7 +9,7 @@ import org.java.util.JavaUtils;
 public class TestHashMap {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// HashMap的几种遍历方式性能比较
         HashMap<String, String> map = new HashMap<String, String>();
         for (int i = 0; i < 1000000; i++)
         {
