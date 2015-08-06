@@ -53,3 +53,7 @@
 - 添加HashMap的实现-MyHashMap及简单测试
 - 添加Comparable与Comprator的比较
 
+---
+- 将原来的structure包改为nowcoder--nowcoder刷题用
+- 目前完成刷题17道,有些没有在包里写，相关题目描述程序里有
+

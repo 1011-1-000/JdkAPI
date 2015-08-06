@@ -15,10 +15,10 @@ public class JavaUtils {
 			int mid = (low + high)/2;
 			
 			if(a[mid].compareTo(x)<0){
-				low = low + 1;
+				low = mid + 1;
 			}
 			else if(a[mid].compareTo(x)>0){
-				high = high -1;
+				high = mid -1;
 			}
 			else{
 				return mid;

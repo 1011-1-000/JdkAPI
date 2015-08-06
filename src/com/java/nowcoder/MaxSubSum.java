@@ -1,4 +1,4 @@
-package com.java.structure;
+package com.java.nowcoder;
 
 import org.java.util.JavaUtils;
 
