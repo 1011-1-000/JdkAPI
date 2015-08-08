@@ -1,7 +1,7 @@
 package com.java.nowcoder;
 //输入两颗二叉树A，B，判断B是不是A的子结构
 public class HasSubtree {
-	public static class TreeNode{
+	private static class TreeNode{
 		int val = 0;
 		TreeNode left = null;
 		TreeNode right = null;

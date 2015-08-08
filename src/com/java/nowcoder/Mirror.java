@@ -1,6 +1,7 @@
 package com.java.nowcoder;
 
-import com.java.nowcoder.HasSubtree.TreeNode;
+import com.java.nowcoder.ReConstructBinaryTree.TreeNode;
+
 
 public class Mirror {
 	public void solution(TreeNode root) {

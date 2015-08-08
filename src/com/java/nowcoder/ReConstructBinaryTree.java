@@ -2,7 +2,7 @@ package com.java.nowcoder;
 
 public class ReConstructBinaryTree {
 	
-	private static class TreeNode{
+	public static class TreeNode{
 		int val;
 		TreeNode left;
 		TreeNode right;

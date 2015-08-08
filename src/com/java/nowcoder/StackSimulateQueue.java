@@ -9,6 +9,7 @@ import java.util.Stack;
 public class StackSimulateQueue {
 	Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
+    int min = Integer.MAX_VALUE;
     
     public void push(int node) {
     	if(stack1.capacity() == stack1.size()){
