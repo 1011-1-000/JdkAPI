@@ -7,7 +7,7 @@ import org.java.util.JavaUtils;
 
 public class MaxSubSum {
 	public static void main(String[] args){
-		int[] a = {-2,11,-4,13,-5,-2};
+		int[] a = {-2,-8,-1,-5,-9};
 		maxSubSum1(a);
 		maxSubSum2(a);
 		maxSubSum3(a);

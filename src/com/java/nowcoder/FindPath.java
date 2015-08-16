@@ -14,7 +14,7 @@ public class FindPath {
 	
 	public ArrayList<ArrayList<Integer>> FindPath(TreeNode root,int target) {
 		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-		ArrayList<Integer> path = new ArrayList<Integer>();
+		Stack<Integer> path = new Stack<Integer>();
 		if(root == null){
 			return null;
 		}
@@ -22,7 +22,23 @@ public class FindPath {
 		TreeNode node = root;
 		Stack<TreeNode> s = new Stack<TreeNode>();
 		while(node.left != null){
-			
+			s.push(node);
+			path.push(node.val);
+			sum += node.val;
+		}
+		
+		while(!s.isEmpty()){
+			if(sum > target){
+				s.pop();
+				sum -= path.pop();
+				node = s.peek();
+				if(node.right != null){
+					
+				}
+			}
+			if(sum < target){
+				node = 
+			}
 		}
     }
 }
